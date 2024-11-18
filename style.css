@@ -3,6 +3,7 @@
     background-color: black;
     color: white;
     padding: 20px 0;
+    overflow: hidden;
   }
   
   .flashing-text {
@@ -16,10 +17,12 @@
   }
   
   .sliding-text {
+    font-family: 'Playfair Display', serif;
     white-space: nowrap;
     overflow: hidden;
     position: relative;
     animation: slide 10s linear infinite;
+    overflow: hidden;
   }
   
   @keyframes slide {
@@ -27,11 +30,11 @@
     100% { left: -100%; }
   }
   
-  .sliding-text::after {
-    content: 'Unbeatable Savings on Everything.';
-    position: absolute;
-    white-space: nowrap;
-    overflow: hidden;
+  .sliding-text::before {
+    content: 'Unbeatable Savings on Everything';
+    display: inline-block;
+    padding-right: 100%; /* Space between repetitions */
+    animation: slide 10s linear infinite;
   }
   
 
