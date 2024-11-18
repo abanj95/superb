@@ -126,6 +126,10 @@ body, h2, p {
     color:#d82e76;
     text-decoration: none;
   } 
+  .footer .contact-info a{
+    color:#ffffff;
+    text-decoration: none;
+  } 
   
   .footer .social-links a {
     color: #fff; /* White text for links */
