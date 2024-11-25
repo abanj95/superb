@@ -150,4 +150,30 @@ body, h2, p {
   .socials{
     height: 30px;
   }
-  
+.footer ul{
+  list-style-type:circle;
+  outline-color: #d82e76;
+}
+.footer li::before {
+  color: #d82e76; /* Pink color */
+  position: absolute;
+  left: 0; /* Adjust as necessary to align with the content */
+  top: 0; /* Adjust as necessary for vertical alignment */
+}
+.address{
+  font-size: small;
+  text-align: left;
+}
+.location {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #d82e76; /* Initial color */
+  animation: colorToggle 1s infinite alternate;
+}
+
+@keyframes colorToggle {
+  from { color: white; }
+  to { color: #d82e76; }
+}
