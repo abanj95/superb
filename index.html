@@ -368,5 +368,13 @@
 
 <script src="scripts.js"></script>
 </body>
+<script>
+  function toggleAccordionContent(header) {
+    var content = header.nextElementSibling;
+    content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    var image = content.querySelector('.wig-image img');
+    image.style.display = image.style.display === 'block' ? 'none' : 'block'; // Toggle image visibility
+  }
+  </script>
   
 </html>
